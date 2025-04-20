@@ -1,7 +1,13 @@
 # MindScope: Mental Health Predictor
 
-**Team:** REP2 Group 1 (Dion, Isaac, Ruiyun)
+**Team:** REP2 Group 1
+- Chia Dion Yi, U2321724K
+- Isaac Wong Vun Hau, U2322857K
+- Wang RuiYun, U2322576B
+
 **Course:** SC1015 Mini Project
+
+[Link to Presentation Video](https://youtu.be/GDiBVJ74Snk)
 
 ## Table of Contents
 1.  [Project Overview](#project-overview)
@@ -18,8 +24,6 @@
 ## Project Overview
 
 Mental health is a critical concern, particularly among university students, with studies indicating that a significant percentage of individuals live with mental disorders, and approximately 50% of cases go undiagnosed. Early detection and intervention can significantly improve outcomes. This project, MindScope, aims to explore the potential of machine learning techniques to predict the likelihood of depression and anxiety in university students, potentially serving as an early-stage indicator. We leverage a multi-modal approach, analyzing structured survey data (Parts A & B) and unstructured text data (Part C) to build predictive models.
-
-[Link to Presentation]()
 
 ---
 
