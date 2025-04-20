@@ -19,9 +19,11 @@
 
 Mental health is a critical concern, particularly among university students, with studies indicating that a significant percentage of individuals live with mental disorders, and approximately 50% of cases go undiagnosed. Early detection and intervention can significantly improve outcomes. This project, MindScope, aims to explore the potential of machine learning techniques to predict the likelihood of depression and anxiety in university students, potentially serving as an early-stage indicator. We leverage a multi-modal approach, analyzing structured survey data (Parts A & B) and unstructured text data (Part C) to build predictive models.
 
+[Link to Presentation]()
+
 ---
 
-### 1. Problem Definition (10%)
+### 1. Problem Definition
 
 **Motivation:** The high prevalence of undiagnosed mental health conditions like depression and anxiety among university students poses a significant challenge. Timely identification is crucial but often difficult.
 
@@ -36,7 +38,7 @@ Mental health is a critical concern, particularly among university students, wit
 
 ---
 
-### 2. Data Preparation and Cleaning (10%)
+### 2. Data Preparation and Cleaning
 
 * **(Part A) Depression Dataset:**
     * Handled missing values by replacing nulls using the mean for numeric columns and the mode for categorical columns.
@@ -61,7 +63,7 @@ Mental health is a critical concern, particularly among university students, wit
 
 ---
 
-### 3. Exploratory Data Analysis (EDA) / Visualization (20%)
+### 3. Exploratory Data Analysis (EDA) / Visualization 
 
 * **(Part A) Depression Dataset:**
     * Analyzed univariate distributions of features.
@@ -80,7 +82,7 @@ Mental health is a critical concern, particularly among university students, wit
 
 ---
 
-### 4. Use of Machine Learning Techniques (20%)
+### 4. Use of Machine Learning Techniques
 
 * **(Part A) Depression Prediction (ANN):**
     * **Model:** An Artificial Neural Network (ANN) was selected for the large (27,901 samples) Depression dataset.
@@ -102,9 +104,11 @@ Mental health is a critical concern, particularly among university students, wit
     * **Rationale:** Chosen to leverage the LLM's pre-trained understanding of language nuances, context, and semantics, overcoming the limitations of keyword-based methods identified in EDA.
     * **Performance:** Achieved a significant improvement in predictive accuracy, increasing from a baseline accuracy of approximately 73% to an average accuracy of **~95.5%** post-fine-tuning on the test set.
 
+    [Link to Fine-Tuned Model](https://huggingface.co/fiendfrye/mental-status-classifier-lama-3.1-8b-fine-tuned)
+
 ---
 
-### 5. Data-Driven Insights and Recommendations (20%)
+### 5. Data-Driven Insights and Recommendations
 
 * **(Part A & B) Insights:** EDA on structured data revealed the multi-factorial nature of depression and anxiety, with no single dominant predictor. Correlation analysis identified key factors associated with anxiety (Isolation, Future Insecurity, Social Relationship).
 * **(Part C) Insights:** Text analysis (EDA) highlighted significant linguistic overlap between different mental health statuses when using traditional methods like TF-IDF. This underscored the need for models that understand semantics and context. Fine-tuning the Llama 3.1 model proved highly effective, demonstrating that LLMs can capture subtle linguistic cues indicative of different mental states ('Normal', 'Anxiety', 'Depression') much better than lexical methods.
@@ -120,14 +124,14 @@ Mental health is a critical concern, particularly among university students, wit
 
 ---
 
-### 6. Quality of Final Team Presentation and Overall Impressions (10%)
+### 6. Final Team Presentation and Overall Impressions
 
 * Our presentation aimed for clarity, logical flow, and effective visualization of our process and results. We sought to demonstrate a clear understanding of the problem, methods, and outcomes.
-* [Link to Presentation Slides] *(Insert link here)*
+* [Link to Presentation Slides](./presentation_slides.pdf)
 
 ---
 
-### 7. Learning Something New and Doing Something Beyond This Course (10%)
+### 7. Learning Something New and Doing Something Beyond This Course
 
 * **(Part A & B Focused):**
     * **Correlation Techniques:** Learned and applied specific correlation methods suitable for mixed data types: **Point-Biserial correlation** (numeric/categorical vs. binary) and **Phi-Squared coefficient** (binary vs. binary).
